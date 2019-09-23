@@ -10,12 +10,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0712DFF2-7925-4C3A-A95B-14864AE50C8A}</ProjectGuid>
+    <ProjectGuid>{82565B19-6E23-4924-BA41-F16488E6F222}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyangularWebapplication</RootNamespace>
-    <AssemblyName>MyangularWebapplication</AssemblyName>
+    <RootNamespace>MyfirstApplication</RootNamespace>
+    <AssemblyName>MyfirstApplication</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -96,6 +96,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="karma.conf.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -104,6 +105,7 @@
     <Content Include="browserslist" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
+    <Content Include="README.md" />
     <Content Include="src\assets\.gitkeep" />
     <Content Include="tsconfig.app.json" />
     <Content Include="tsconfig.json" />
@@ -117,7 +119,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="karma.conf.js" />
     <Content Include="src\app\app.component.css" />
     <Content Include="src\app\app.component.html" />
     <Content Include="src\favicon.ico" />
@@ -156,9 +157,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2863</DevelopmentServerPort>
+          <DevelopmentServerPort>2253</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2863/</IISUrl>
+          <IISUrl>http://localhost:2253/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
