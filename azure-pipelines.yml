@@ -1,4 +1,7 @@
 # Node.js with Angular
+- task: Npm@1
+  inputs:
+    command: 'install'
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
