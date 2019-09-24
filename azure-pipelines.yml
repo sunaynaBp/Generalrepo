@@ -16,9 +16,9 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd MyangularWebapplication/MyangularWebapplication/ 
     npm install -g @angular/cli
     npm install
     ng build --prod
+    cd MyangularWebapplication/MyangularWebapplication/
   displayName: 'npm install and build'
 - task : PublishBuildArtifacts@1
