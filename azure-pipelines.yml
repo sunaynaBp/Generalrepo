@@ -14,12 +14,20 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+  
 
 - script: |
     npm install -g @angular/cli
-    npm audit fix
+    cd MyangularWebapplication/MyangularWebapplication/
     npm install
-    ng build --prod
+    run ng -- build --configuration=production --outputPath=$(Build.ArtifactStagingDirectory)/app
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
    
   displayName: 'npm install and build'
-- task : PublishBuildArtifacts@1
+
